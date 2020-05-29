@@ -9,15 +9,15 @@ import game.model.map.MapChar;
 import game.model.map.MapElement;
 
 /**
- * Elementos dinamicos que se pueden mover. Como Actor y Item. Tiene un hashmap
- * que contiene los elementos que la entidad puede pasar.
+ *Dynamic elements that can be moved. As Actor and Item. It has a hashmap
+ * which contains the elements that the entity can pass.
  */
 public abstract class Entity extends Element
 {
 	private HashMap<Integer, ElementTypes> passable = new HashMap<>();
 
 	/**
-	 * Genera una entidad en una posicion.
+	 * Generate an entity in a position.
 	 * 
 	 * @param pos
 	 */
@@ -27,9 +27,9 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Devuelve los elementos que la entidad puede traspasar.
-	 * 
-	 * @return El hashmap de los elementos passables
+	 * Returns the elements that the entity can transfer.
+     *
+     * @return The hashmap of passable elements
 	 */
 	public HashMap<Integer, ElementTypes> getPassable()
 	{
@@ -37,7 +37,7 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Setea los elementos que la entidad puede traspasar.
+	 * Sets the elements that the entity can transfer. 
 	 * 
 	 * @param passable
 	 */
@@ -47,19 +47,19 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Cambia la posicion de la entidad antes de hacer makemove.
+	 * Change the position of the entity before making a move.
 	 */
 	abstract public void changePosition();
 
 	/**
-	 * Hace la movida de una entidad.
+	 * Makes the move of an entity.
 	 */
 	abstract public void makeMove();
 
 	/**
-	 * Determina si esta entidad es un actor.
-	 * 
-	 * @return si esta entidad es un actor
+	 *  Determine if this entity is an actor.
+     *
+     * @return if this entity is an actor
 	 */
 	public boolean isActor()
 	{
@@ -74,9 +74,9 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Determina si esta entidad es Rockford.
-	 * 
-	 * @return si esta entidad es Rockford
+	 * Determine if this entity is Rockford.
+     *
+     * @return if this entity is Rockford 
 	 */
 	public boolean isRockford()
 	{
@@ -91,9 +91,9 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Determina si esta entidad es un Item.
-	 * 
-	 * @return si esta entidad es un Item
+	 * Determine if this entity is an Item.
+	 *
+	 * @return if this entity is an Item
 	 */
 	public boolean isItem()
 	{
@@ -108,7 +108,7 @@ public abstract class Entity extends Element
 	}
 	
 	
-	//////////////////// METODOS SIMPLES
+	////////////////////  SIMPLES METHODS
 
 	
 	
@@ -116,7 +116,7 @@ public abstract class Entity extends Element
 	
 	
 	/**
-	 * Pone la celda empty en passable.
+	 * Put the empty cell in passable.
 	 */
 	public void putEmptyPassable()
 	{
@@ -124,8 +124,8 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Verifica en el hashmap si la celda de abajo es passable para esta
-	 * entidad.
+	 * Check in the hashmap if the cell below is passable for this
+     * entity.
 	 * 
 	 * @return boolean
 	 */
@@ -135,8 +135,8 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Verifica en el hashmap si la celda de arriba es passable para esta
-	 * entidad.
+	 * Check in the hashmap if the cell above is passable for this
+     * entity. 
 	 * 
 	 * @return boolean
 	 */
@@ -146,8 +146,8 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Verifica en el hashmap si la celda de derecha es passable para esta
-	 * entidad.
+	 * Check in the hashmap if the right cell is passable for this
+     * entity.
 	 * 
 	 * @return boolean
 	 */
@@ -157,8 +157,8 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Verifica en el hashmap si la celda de izquierda es passable para esta
-	 * entidad.
+	 *  Check in the hashmap if the left cell is passable for this
+     * entity.
 	 * 
 	 * @return boolean
 	 */
@@ -168,8 +168,8 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Verifica en el hashmap si la celda de abajo izquierda es passable para
-	 * esta entidad.
+	 * Check the hashmap if the bottom left cell is passable for
+     * this entity.
 	 * 
 	 * @return boolean
 	 */
@@ -179,8 +179,8 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Verifica en el hashmap si la celda de abajo izquierda es passable para
-	 * esta entidad.
+	 * Check the hashmap if the bottom left cell is passable for
+     * this entity.
 	 * 
 	 * @return boolean
 	 */
@@ -190,7 +190,7 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Verifica en el MapItem si el item abajo de esta entidad es redondo.
+	 * Check in the MapItem if the item below this entity is round.
 	 * 
 	 * @return boolean
 	 */
@@ -207,8 +207,8 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Verifica en el MapItem si el item puede caer por los uno de los dos
-	 * lados.
+	 * Check in the MapItem if the item can fall for one of the two
+     * sides.
 	 * 
 	 * @return boolean
 	 */
@@ -218,8 +218,8 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Verifica en el MapItem si el item abajo de esta entidad es un muro magico
-	 * activo.
+	 * Check on the MapItem if the item below this entity is a magic wall
+     * active.
 	 * 
 	 * @return boolean
 	 */
@@ -229,7 +229,7 @@ public abstract class Entity extends Element
 	}
 
 	/**
-	 * Verifica en el MapItem si el item abajo de esta entidad es un muro.
+	 * Check in the MapItem if the item below this entity is a wall.
 	 * 
 	 * @return boolean
 	 */
@@ -239,7 +239,7 @@ public abstract class Entity extends Element
 	}
 	
 	/**
-	 * Remueve la entidad del mapa y lista.
+	 * Remove the entity from the map and list.
 	 */
 	public void removeEntity(Entity entity)
 	{

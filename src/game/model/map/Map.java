@@ -4,24 +4,24 @@ import game.model.element.Element;
 import game.model.element.Position;
 
 /**
- * Clase padre de los mapas.
+ * Map parent class.
  */
 public abstract class Map
 {
 
 	/**
-	 * Inicializa el mapa.
+	 * Initialize the map. 
 	 */
 	abstract public void start();
 
 	/**
-	 * Llena el mapa, inicializa la matriz con tierra, vacio o null.
+	 * Fill the map, initialize the matrix with earth, empty or null.
 	 */
 	abstract public void fill();
 
 	/**
 	 * 
-	 * @return Altura del mapa
+	 * @return Map height
 	 */
 	public static int mapHeight()
 	{
@@ -30,7 +30,7 @@ public abstract class Map
 
 	/**
 	 * 
-	 * @return Longitud del mapa
+	 * @return Map length
 	 */
 	public static int mapWidth()
 	{
@@ -40,7 +40,7 @@ public abstract class Map
 	/**
 	 * 
 	 * @param pos
-	 * @return si la posicion esta en el mapa
+	 * @return if the position is on the map
 	 */
 	public static boolean isInMap(Position pos)
 	{
@@ -52,7 +52,7 @@ public abstract class Map
 	 * 
 	 * @param x
 	 * @param y
-	 * @return si las coordenadas esta en el mapa
+	 * @return if the coordinates is on the map
 	 */
 	public static boolean isInMap(Integer x, Integer y)
 	{
@@ -62,7 +62,7 @@ public abstract class Map
 	/**
 	 * 
 	 * @param element
-	 * @return si la pos del elemento esta en el mapa
+	 * @return if the item's pos is on the map
 	 */
 	public static boolean elementPosIsInMap(Element element)
 	{

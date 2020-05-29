@@ -155,8 +155,8 @@ public class BDLevelReader
 	}
 
 	/*
-	 * Éste método crea una instancia del level reader a modo de ejemplo para
-	 * demostrar como se lee el NIVEL 1
+	 * This method creates an instance of the level reader as an example to
+     * demonstrate how to read LEVEL 1
 	 */
 	public static void main(String[] args)
 	{
@@ -188,7 +188,7 @@ public class BDLevelReader
 	}
 
 	/*
-	 * Este método imprime como se vería el mapa en formato texto
+	 * This method prints what the map would look like in text format
 	 */
 	public void imprimirMapa()
 	{

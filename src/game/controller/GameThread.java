@@ -12,7 +12,7 @@ import game.view.FrameMap;
 import game.view.sound.Sound;
 
 /**
- * Thread del juego.
+ * Game Thread
  */
 public class GameThread extends TimerTask
 {
@@ -25,7 +25,7 @@ public class GameThread extends TimerTask
 	// Rockford player = PlayerAccess.getPlayer();
 
 	/**
-	 * Constructor, timer del thread.
+	 * Constructor, thread timer.
 	 * 
 	 * @param timer
 	 */
@@ -35,21 +35,21 @@ public class GameThread extends TimerTask
 	}
 
 	/**
-	 * Ejecucion en loop.
-	 * <p>
-	 * 1. Incrementa un turno y remueve los elementos del panel.
-	 * <p>
-	 * 2. Refresca el juego cada turno.
-	 * <p>
-	 * 3. Pierde si no tiene mas vidas, gana si llega a la salida.
-	 * <p>
-	 * 4. Cada turno verifica si el jugador gano o perdio, hace algo en cada
-	 * caso.
-	 * <p>
-	 * 5. Cuando pierde, se parra el juego, ejecuta el frame de entrada de score
-	 * y termina el timer.
-	 * <p>
-	 * 
+* Loop execution.
+* <p>
+* 1. Increase a turn and remove the elements from the panel.
+* <p>
+* 2. Refresh the game every turn.
+* <p>
+* 3. Lose if you have no more lives, win if you reach the exit.
+* <p>
+* 4. Each turn checks if the player won or lost, does something in each
+* case.
+* <p>
+* 5. When he loses, the game stops, he executes the score entry frame
+* and end the timer.
+* <p>
+*
 	 */
 	public void run()
 	{
@@ -65,7 +65,7 @@ public class GameThread extends TimerTask
 	}
 
 	/**
-	 * Hace un turno del juego.
+	 * Does a turn of the game.
 	 */
 	private void doGameTurn()
 	{
@@ -120,8 +120,8 @@ public class GameThread extends TimerTask
 	}
 
 	/**
-	 * Verifica la condicion del jugador. Si murio, no le queda tiempo,
-	 * perdio sus vidas o esta en la salida hace algo.
+	 * Check the player's condition. If he died, he has no time left,
+     * lost their lives or is on the way out doing something.
 	 */
 	private void checkPlayerCondition()
 	{
@@ -144,7 +144,7 @@ public class GameThread extends TimerTask
 	}
 
 	/**
-	 * Borra el framemap.
+	 * Delete the framemap.
 	 */
 	private void disposeFrameMap()
 	{
@@ -153,7 +153,7 @@ public class GameThread extends TimerTask
 	}
 
 	/**
-	 * Hace aparecer al frame para entrar el score.
+	 * Makes the frame appear to enter the score.
 	 * @param time
 	 */
 	private void startEnterScore(Integer time)
@@ -164,7 +164,7 @@ public class GameThread extends TimerTask
 	}
 
 	/**
-	 * setea el proximo nivel
+	 * set the next level
 	 */
 	private void nextLevel()
 	{
@@ -173,7 +173,7 @@ public class GameThread extends TimerTask
 
 	/**
 	 * 
-	 * @return si no esta en el nivel el player
+	 * @return if it is not in the level the player
 	 */
 	private boolean playerNotInLevel()
 	{
@@ -182,7 +182,7 @@ public class GameThread extends TimerTask
 
 	/**
 	 * 
-	 * @return si no queda mas tiempo
+	 * @return if there is no more time
 	 */
 	private boolean runOutOfTime()
 	{
@@ -191,7 +191,7 @@ public class GameThread extends TimerTask
 
 	/**
 	 * 
-	 * @return Si el jugador perdio
+	 * @return If the player lost
 	 */
 	private boolean playerHasLost()
 	{
@@ -200,7 +200,7 @@ public class GameThread extends TimerTask
 
 	/**
 	 * 
-	 * @return Si el player murio
+	 * @return If the player died
 	 */
 	private boolean playerIsDead()
 	{
@@ -209,7 +209,7 @@ public class GameThread extends TimerTask
 
 	/**
 	 * 
-	 * @return Si el player existe
+	 * @return If the player exists
 	 */
 	private boolean playerExists()
 	{
@@ -217,7 +217,7 @@ public class GameThread extends TimerTask
 	}
 
 	/**
-	 * Refresca el mapa y framemap.
+	 * Refresh the map and framemap.
 	 */
 	private void refreshMapAndFrame()
 	{
@@ -226,7 +226,7 @@ public class GameThread extends TimerTask
 	}
 
 	/**
-	 * Proximo turno, se ejecuta siempre cada turno.
+	 * Next turn, it always runs every turn.
 	 */
 	private void nextTurn()
 	{

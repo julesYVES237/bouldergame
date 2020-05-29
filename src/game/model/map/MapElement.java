@@ -14,7 +14,7 @@ import game.model.element.entity.item.Item;
 import game.model.element.entity.item.Rock;
 
 /**
- * Matriz de los elementos.
+ * Element matrix.
  */
 public class MapElement extends Map
 {
@@ -22,7 +22,7 @@ public class MapElement extends Map
 	private static Element[][] matrix;
 
 	/**
-	 * Constructor de MapElement.
+	 * MapElement constructor.
 	 */
 	private MapElement()
 	{
@@ -44,7 +44,7 @@ public class MapElement extends Map
 	}
 
 	/**
-	 * Devuelve un elemento de la matriz.
+	 * Returns an element of the array.
 	 * 
 	 * @param pos
 	 * @return item
@@ -55,8 +55,8 @@ public class MapElement extends Map
 	}
 
 	/**
-	 * Devuelve un Elemento de la matriz, utiliza coordenadas X,Y.
-	 * 
+	 * Returns an Element of the matrix, uses X, Y coordinates.
+     *
 	 * @param x
 	 * @param y
 	 * @return item
@@ -67,10 +67,10 @@ public class MapElement extends Map
 	}
 	
 	/**
-	 * Setea un Elemento en la matriz.
+	 * Sets an Element in the array.
 	 * 
 	 * @param element
-	 * @return si se seteo correctamente
+	 * @return if it was set correctly
 	 */
 	public static boolean setElement(Element element)
 	{
@@ -86,10 +86,10 @@ public class MapElement extends Map
 	}
 	
 	/**
-	 * Setea una celda en la matriz.
+	 * Sets a cell in the matrix.
 	 * 
 	 * @param cell
-	 * @return si se seteo correctamente
+	 * @return if it was set correctly
 	 */
 	public static boolean setCell(Cell cell)
 	{
@@ -105,10 +105,10 @@ public class MapElement extends Map
 	}
 	
 	/**
-	 * Setea un item en la matriz.
+	 * Set an item in the array.
 	 * 
 	 * @param item
-	 * @return si se seteo correctamente
+	 * @return if it was set correctly
 	 */
 	public static boolean setItem(Item item)
 	{
@@ -124,10 +124,10 @@ public class MapElement extends Map
 	}
 	
 	/**
-	 * Setea un celda en la matriz.
+	 * Sets a cell in the matrix.
 	 * 
 	 * @param actor
-	 * @return si se seteo correctamente
+	 * @return if it was set correctly
 	 */
 	public static boolean setActor(Actor actor)
 	{
@@ -143,10 +143,10 @@ public class MapElement extends Map
 	}
 
 	/**
-	 * Remueve un Elemento de la matriz.
+	 * Remove an Element from the array.
 	 * 
 	 * @param pos
-	 * @return si se borro el elemento
+	 * @return if the item was deleted
 	 */
 	public static boolean removeElement(Position pos)
 	{
@@ -162,11 +162,11 @@ public class MapElement extends Map
 	}
 	
 	/**
-	 * Devuelve un item si no puede devuelve null, utiliza coordenadas X,Y.
+	 * Returns an item if it can't returns null, uses X, Y coordinates.
 	 * 
 	 * @param x
 	 * @param y
-	 * @return un item si no puede devuelve null
+	 * @return an item if it can't returns null
 	 */
 	public static Item getItem(Integer x, Integer y)
 	{
@@ -188,10 +188,10 @@ public class MapElement extends Map
 	}
 
 	/**
-	 * Devuelve un diamante si no puede devuelve null.
+	 * Returns a diamond if it can't returns null.
 	 * 
 	 * @param pos
-	 * @return diamante
+	 * @return diamond
 	 */
 	public static Diamond getDiamond(Position pos)
 	{
@@ -213,11 +213,11 @@ public class MapElement extends Map
 	}
 
 	/**
-	 * Devuelve un diamante si no puede devuelve null, utiliza coordenadas X,Y.
+	 * Returns a diamond if it can't returns null, uses X, Y coordinates.
 	 * 
 	 * @param x
 	 * @param y
-	 * @return un diamante si no puede devuelve null
+	 * @return a diamond if it can't returns null
 	 */
 	public static Diamond getDiamond(Integer x, Integer y)
 	{
@@ -239,11 +239,11 @@ public class MapElement extends Map
 	}
 
 	/**
-	 * Devuelve un rock si no puede devuelve null, utiliza coordenadas X,Y.
-	 * 
+	 * Returns a rock if unable to return null, uses X, Y coordinates.
+     *
 	 * @param x
 	 * @param y
-	 * @return un rock si no puede devuelve null
+	 * @return a rock if it can't returns null
 	 */
 	public static Rock getRock(Integer x, Integer y)
 	{
@@ -267,7 +267,7 @@ public class MapElement extends Map
 	/**
 	 * 
 	 * @param pos
-	 * @return tierra si puede sino devuelve null
+	 * @return earth if you can but returns null
 	 */
 	public static Dirt getDirt(Position pos)
 	{
@@ -289,11 +289,11 @@ public class MapElement extends Map
 	}
 
 	/**
-	 * Devuelve tierra si puede sino devuelve null.
+	 * Returns earth if it can but returns null.
 	 * 
 	 * @param x
 	 * @param y
-	 * @return tierra si puede sino devuelve null
+	 * @return earth if you can but returns null
 	 */
 	public static Dirt getDirt(Integer x, Integer y)
 	{
@@ -315,11 +315,11 @@ public class MapElement extends Map
 	}
 
 	/**
-	 * Devuelve un muro si puede, sino devuelve null.
+	 * Returns a wall if it can, otherwise it returns null.
 	 * 
 	 * @param x
 	 * @param y
-	 * @return un muro si puede, sino null
+	 * @return a wall if you can but null
 	 */
 	public static Wall getWall(Integer x, Integer y)
 	{
@@ -341,11 +341,11 @@ public class MapElement extends Map
 	}
 
 	/**
-	 * Retorna Rockford si puede, sino retorna null.
+	 * Rockford returns if he can, but returns null.
 	 * 
 	 * @param x
 	 * @param y
-	 * @return a Rockford
+	 * @return to Rockford
 	 */
 	public static Rockford getRockford(Integer x, Integer y)
 	{
@@ -374,9 +374,9 @@ public class MapElement extends Map
 	}
 
 	/**
-	 * Devuelve la salida si esta, sino devuelve null.
-	 * 
-	 * @return la salida si esta, sino null
+	 * Returns the output if it is, otherwise it returns null.
+     *
+     * @return the output if it is, but null
 	 */
 	public static Exit findExit()
 	{

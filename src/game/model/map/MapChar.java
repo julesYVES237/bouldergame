@@ -5,8 +5,8 @@ import game.model.element.ElementTypes;
 import game.model.element.entity.actor.Rockford;
 
 /**
- * Esta clase es la encargada de agarrar los elementos y hacer una matriz de
- * carateres con estos.
+ * This class is in charge of grabbing the elements and making a matrix of
+ * characters with these.
  */
 public class MapChar extends Map
 {
@@ -14,7 +14,7 @@ public class MapChar extends Map
 	private static ElementTypes[][] map;
 
 	/**
-	 * Constructor de MapVisual.
+	 * MapVisual constructor.
 	 */
 	private MapChar()
 	{
@@ -36,8 +36,8 @@ public class MapChar extends Map
 	}
 
 	/**
-	 * Construye el mapa de elementos con sus caracteres, los actores tienen mas
-	 * prioridad que los objetos que tienen mas prioridad que las celdas.
+	 * Build the element map with its characters, the actors have more
+     * priority than objects that have higher priority than cells.
 	 */
 	public static void drawMap()
 	{
@@ -51,8 +51,8 @@ public class MapChar extends Map
 	}
 
 	/**
-	 * Imprime el mapa y algunas informacion. Se utiliza para la consola y
-	 * debugging.
+	 * Print the map and some information. It is used for the console and
+     * debugging.
 	 */
 	public static void imprimirMapa()
 	{
@@ -64,7 +64,7 @@ public class MapChar extends Map
 	}
 
 	/**
-	 * Devuelve un caracter de la matriz, utilizando coordenadas X,Y.
+	 * Returns a character from the matrix, using X, Y coordinates.
 	 * 
 	 * @param x
 	 * @param y
@@ -102,7 +102,7 @@ public class MapChar extends Map
 	
 	
 	/**
-	 * Pone el caracter en el mapa.
+	 * Puts the character on the map.
 	 * @param y
 	 * @param x
 	 */
@@ -124,7 +124,7 @@ public class MapChar extends Map
 	}
 	
 	/**
-	 * Muestra la informacion del turno.
+	 * Show shift information.
 	 */
 	private static void showInfo()
 	{
@@ -140,7 +140,7 @@ public class MapChar extends Map
 	}
 
 	/**
-	 * Mostra la informacion del ultimo turno.
+	 * Show the information of the last shift.
 	 */
 	private static void showEndInfo()
 	{
@@ -148,17 +148,17 @@ public class MapChar extends Map
 	}
 
 	/**
-	 * Muestra la informacion del turno.
+	 * Show shift information.
 	 * @param player
 	 */
 	private static void showTurnInfo(Rockford player)
 	{
 		System.out.println("Rockford Pos: " + player.getPosition().getX() + "," + player.getPosition().getY());
-		System.out.println("Rockford Diamantes: " + player.getDiamonds());
+		System.out.println("Rockford Diamonds: " + player.getDiamonds());
 	}
 
 	/**
-	 * Imprime el mapa.
+	 * Print the map.
 	 */
 	private static void imprimiendoMapa()
 	{

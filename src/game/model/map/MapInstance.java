@@ -11,10 +11,10 @@ import game.model.element.entity.item.*;
 import game.model.map.bdlevel.BDLevelReader;
 
 /**
- * Esta clase administra el mapa de elementos y se ocupa de refresar la
- * lista de entidades, de construir y almacenar informacion del nivel. Contiene
- * a un mapa de celdas, items y actores, junto con una lista con todas las
- * entidades vivas.
+ * This class manages the element map and takes care of refreshing the
+ * list of entities, to build and store level information. Contains
+ * to a map of cells, items, and actors, along with a list of all the
+ * living entities.
  */
 public class MapInstance
 {
@@ -41,7 +41,7 @@ public class MapInstance
 			{ 9, 5, 50, 90, 120 }, };
 
 	/**
-	 * Constructor de MapInstance.
+	 * MapInstance constructor.
 	 */
 	private MapInstance()
 	{
@@ -56,13 +56,13 @@ public class MapInstance
 	}
 
 	/**
-	 * Singleton de mapInstance.
+	 * MapInstance Singleton .
 	 * 
 	 * @return mapinstance
 	 */
 	public static MapInstance getInstance()
 	{
-		// Si la instancia no se creo, se crea, y se devuelve la instancia
+		//If the instance was not created, it is created, and the instance is returned
 		if (mapinstance == null)
 		{
 			mapinstance = new MapInstance();
@@ -79,8 +79,8 @@ public class MapInstance
 	
 	
 	/**
-	 * Inicializa mapinstance, inicializa los tres mapas de elementos, carga el
-	 * levelreader y inicializa la lista de entidades.
+	 *Initialize mapinstance, initialize all three element maps, load the
+     *levelreader and initialize the entity list.
 	 * 
 	 * @param levelReader
 	 */
@@ -91,8 +91,8 @@ public class MapInstance
 	}
 
 	/**
-	 * Se occupa de leer el levelreader utilizando el nivel eligido y saca
-	 * informacion de este.
+	 * Take care of reading the levelreader using the chosen level and take out
+     * information on this.
 	 */
 	private void readLevel()
 	{
@@ -101,7 +101,7 @@ public class MapInstance
 	}
 	
 	/**
-	 * Construye y setea el proximo nivel.
+	 * Build and set the next level.
 	 */
 	public void levelNext()
 	{
@@ -110,7 +110,7 @@ public class MapInstance
 	}
 	
 	/**
-	 * Reinicia el nivel.
+	 * Restart the level.
 	 */
 	public void levelRestart()
 	{
@@ -118,7 +118,7 @@ public class MapInstance
 	}
 	
 	/**
-	 * Construye y setea el anterior nivel.
+	 * Build and set the previous level.
 	 */
 	public void levelPrevious()
 	{
@@ -127,15 +127,15 @@ public class MapInstance
 	}
 	
 	/**
-	 * Resetea el mapinstance y construye el nivel numero x.
-	 * 
+	 * Reset the mapinstance and build level number x.
+     *
 	 * @param selectedLevel
 	 */
 	public void buildSelectedLevel(Integer selectedLevel) throws LevelNotValidException
 	{
 		if (levelNotValid(selectedLevel))
 		{
-			throw new LevelNotValidException("Nivel no valido");
+			throw new LevelNotValidException("Invalid level");
 		}
 		else
 		{
@@ -148,7 +148,7 @@ public class MapInstance
 	}
 
 	/**
-	 * Decrementa el cronometro del mapa.
+	 * Decrease the timer on the map.v
 	 * 
 	 * @param timer
 	 */
@@ -161,8 +161,8 @@ public class MapInstance
 	}
 
 	/**
-	 * Mata a un elemento, lo remueve de su matriz correspondiente.
-	 * 
+	 * Kills an element, removes it from its corresponding matrix.
+     *
 	 * @param pos
 	 */
 	public void kill(Position pos)
@@ -171,8 +171,8 @@ public class MapInstance
 	}
 
 	/**
-	 * Mata a un elemento, lo remueve de su matriz correspondiente, utiliza
-	 * coordenadas X,Y.
+	 * Kill an element, remove it from its corresponding matrix, use
+     * X, Y coordinates.
 	 * 
 	 * @param x
 	 * @param y
@@ -186,8 +186,8 @@ public class MapInstance
 	}
 
 	/**
-	 * Determina si el nivel es vacio. (Si no hay Rockford).
-	 * 
+	 * Determine if the level is empty. (If there is no Rockford).
+     *
 	 * @return boolean
 	 */
 	public boolean levelHasRockford()
@@ -199,8 +199,8 @@ public class MapInstance
 	}
 
 	/**
-	 * Refresca el mapa, decrementa el timer, dibuja el mapa y cambia la
-	 * posicion de las entidades.
+	 * Refresh the map, decrease the timer, draw the map and change the
+     * position of the entities.
 	 */
 	public void refresh()
 	{
@@ -210,8 +210,8 @@ public class MapInstance
 	}
 	
 	/**
-	 * Genera el mapa utilizando los tiles del levelreader, creando los
-	 * elementos y poniendolos en las matrices.
+	 * Generate the map using the tiles of the levelreader, creating the
+     * elements and putting them in the matrices.
 	 */
 	private void buildMap() throws RockfordNotInLevelException
 	{
@@ -237,8 +237,8 @@ public class MapInstance
 	
 	
 	/**
-	 * Devuelve el levelreader. Util para acceder a su tamanio.
-	 * 
+	 * Returns the levelreader. Useful to access your size.
+     *
 	 * @return levelreader
 	 */
 	public BDLevelReader getLevelReader()
@@ -247,8 +247,8 @@ public class MapInstance
 	}
 	
 	/**
-	 * Devuelve la lista de entidades.
-	 * 
+	 * Returns the list of entities.
+     *
 	 * @return listentity
 	 */
 	public ListOfEntities getEntitiesActive()
@@ -257,7 +257,7 @@ public class MapInstance
 	}
 
 	/**
-	 * Devuelve el numero del nivel actual.
+	 * Returns the number of the current level.
 	 * 
 	 * @return selectedlevel
 	 */
@@ -267,7 +267,7 @@ public class MapInstance
 	}
 
 	/**
-	 * Setea el numero del nivel actual.
+	 * Sets the number of the current level.
 	 * 
 	 * @param selectedlevels
 	 */
@@ -277,7 +277,7 @@ public class MapInstance
 	}
 	
 	/**
-	 * Devuelve el cronometro del nivel.
+	 * Returns the level timer.
 	 * 
 	 * @return timer
 	 */
@@ -287,8 +287,8 @@ public class MapInstance
 	}
 
 	/**
-	 * Devuelve el valor de los diamantes del nivel actual.
-	 * 
+	 * Returns the value of diamonds from the current level.
+     * 
 	 * @return diamondvalue
 	 */
 	public Integer getDiamondvalue()
@@ -297,8 +297,8 @@ public class MapInstance
 	}
 
 	/**
-	 * Devuelve el valor bonus de los diamantes del nivel actual.
-	 * 
+	 * Returns the bonus value of diamonds of the current level.
+     *
 	 * @return diamondbonus
 	 */
 	public Integer getDiamondbonus()
@@ -307,7 +307,7 @@ public class MapInstance
 	}
 
 	/**
-	 * Devuelve el score total del jugador.
+	 * Returns the player's total score.
 	 * 
 	 * @return playerscore
 	 */
@@ -317,7 +317,7 @@ public class MapInstance
 	}
 
 	/**
-	 * Setea el score total del jugador.
+	 * Sets the player's total score.
 	 * 
 	 * @param playerscore
 	 */
@@ -327,8 +327,8 @@ public class MapInstance
 	}
 
 	/**
-	 * Devuelve la cantidad necesaria de diamantes para abrir la puerta.
-	 * 
+	 * Return the required amount of diamonds to open the door.
+     *
 	 * @return diamondsneeded
 	 */
 	public Integer getDiamondsneeded()
@@ -371,7 +371,7 @@ public class MapInstance
 	}
 	
 	/**
-	 * Lee la informacion del nivel.
+	 * Read the level information.
 	 */
 	private void readLevelInfo()
 	{
@@ -382,7 +382,7 @@ public class MapInstance
 	}
 	
 	/**
-	 * Rehace el nivel.
+	 * Redo the level.
 	 */
 	private void rebuildingSelectedLevel()
 	{
@@ -406,7 +406,7 @@ public class MapInstance
 	}
 	
 	/**
-	 * Construyendo el mapa.
+	 * Building the map.
 	 */
 	private void buildingMap()
 	{
@@ -421,7 +421,7 @@ public class MapInstance
 	}
 	
 	/**
-	 * Reinitializa MapInstance.
+	 * Reinitialize MapInstance.
 	 */
 	private static void initializeMapInstance()
 	{
@@ -433,7 +433,7 @@ public class MapInstance
 	}
 	
 	/**
-	 * Pone el lector de niveles
+	 * Puts the level reader
 	 */
 	private static void putLevelReader()
 	{
@@ -444,7 +444,7 @@ public class MapInstance
 	/**
 	 * 
 	 * @param selectedLevel
-	 * @return si el nivel es valido
+	 * @return if the level is valid
 	 */
 	private boolean levelNotValid(Integer selectedLevel)
 	{
@@ -455,7 +455,7 @@ public class MapInstance
 	 * 
 	 * @param x
 	 * @param y
-	 * @return si puede morir el elemento
+	 * @return if the element can die
 	 */
 	private boolean elementCanDie(Integer x, Integer y)
 	{
@@ -463,7 +463,7 @@ public class MapInstance
 	}
 	
 	/**
-	 * Cambia la posicion de las entidades.
+	 * Change the position of the entities.
 	 */
 	private void entitiesMove()
 	{
@@ -475,7 +475,7 @@ public class MapInstance
 	}
 	
 	/**
-	 * Checkea si rockford esta en el nivel.
+	 * Check if rockford is on the level.
 	 * @throws RockfordNotInLevelException
 	 */
 	private void checkRockfordNotInLevel() throws RockfordNotInLevelException
@@ -487,8 +487,8 @@ public class MapInstance
 	}
 
 	/**
-	 * Convierte las tiles del levelreader a elementos y los pone en el
-	 * mapa de elementos.
+	 * Convert the tiles of the levelreader to elements and put them in the
+	 * element map.
 	 * @param y
 	 * @param x
 	 */
@@ -573,7 +573,7 @@ public class MapInstance
 	
 	
 //	/**
-//	 * Retorna si las coordenadas son validas.
+//	 * Returns if the coordinates are valid.
 //	 * 
 //	 * @param x
 //	 * @param y

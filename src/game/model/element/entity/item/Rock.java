@@ -14,7 +14,7 @@ public class Rock extends Fallable
 {
 
 	/**
-	 * Constructor de rocas.
+	 * Rock Constructor .
 	 * 
 	 * @param pos
 	 */
@@ -26,7 +26,7 @@ public class Rock extends Fallable
 	}
 
 	/**
-	 * Constructor de rocas con estado inicial.
+	 * Initial state rock constructor..
 	 * 
 	 * @param pos
 	 * @param state
@@ -39,11 +39,11 @@ public class Rock extends Fallable
 	}
 
 	/**
-	 * Permite modificar el estado de la roca si esta siendo pusheada por
-	 * rockford
+	 * It allows to modify the state of the rock if it is being pushed by
+     * rockford 
 	 * 
 	 * @param player:
-	 *            El objeto que representa a rockford
+	 *                The object that represents rockford.
 	 */
 	public void pushed(Rockford player)
 	{
@@ -164,10 +164,10 @@ public class Rock extends Fallable
 		}
 	}
 
-	// METODOS SIMPLES
+	// SIMPLE METHODS
 
 	/**
-	 * Pone los passables de Rock.
+	 * Puts the Rock passables.
 	 */
 	private void putFallingPassables()
 	{
@@ -181,7 +181,7 @@ public class Rock extends Fallable
 	}
 
 	/**
-	 * Remueve los passables de Rock.
+	 * Remove the passables from Rock.
 	 */
 	private void removeFallingPassables()
 	{

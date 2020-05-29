@@ -7,8 +7,8 @@ import game.model.map.MapChar;
 import java.util.Scanner;
 
 /**
- * Hace el lanzamiento del juego sin interface grafica. Util para debugear.
- * Funciona por turnos y con el teclado y la consola.
+ * Launches the game without a graphic interface. Useful for debuting.
+ * Works in shifts and with keyboard and console.
  */
 public class Console
 {
@@ -32,28 +32,28 @@ public class Console
 	}
 
 	/**
-	 * Escribe en la consola el mensaje inicial.
+	 * Write the initial message on the console.
 	 */
 	private static void writeIntroInConsole()
 	{
-		System.out.println("Usar las teclas (w)(a)(s)(d) para mover a Rockford, (e) para esperar, apretar (q) para quitar el nivel");
+		System.out.println("Use the keys (w)(a)(s)(d) to move Rockford, (e) to wait, squeeze (q) to remove the level ");
 	}
 
 	/**
-	 * Escribe en consola la informacion.
+	 * Write the information in the console.
 	 */
 	private static void writeInfoInConsole()
 	{
-		System.out.println("FIN DEL NIVEL: " + MapInstance.getInstance().getSelectedLevel());
-		System.out.println("FIN DEL PROGRAMA");
+		System.out.println("END OF LEVEL: " + MapInstance.getInstance().getSelectedLevel());
+		System.out.println("END OF PROGRAM ");
 	}
 
 	/**
-	 * Hace el turno.
+	 * 	Make shift.
 	 * @param in
 	 * @param quit
 	 * @param player
-	 * @return si el jugador quito
+	 * @return if the player removed
 	 */
 	private static boolean doTurn(Scanner in, boolean quit, Rockford player)
 	{
@@ -68,11 +68,11 @@ public class Console
 	}
 
 	/**
-	 * Presionar tecla para hacer algo.
+	 * Press key to do something.
 	 * @param in
 	 * @param quit
 	 * @param player
-	 * @return si el jugador apreto la tecla quitar
+	 * @return if the player hit the remove key
 	 */
 	private static boolean pressKeyToMove(Scanner in, boolean quit, Rockford player)
 	{
@@ -103,7 +103,7 @@ public class Console
 	}
 
 	/**
-	 * Refresava el mapa y lo imprime.
+	 * Refresh the map and print it.
 	 */
 	private static void refreshMapAndPrint()
 	{
@@ -112,7 +112,7 @@ public class Console
 	}
 
 	/**
-	 * Setea el nivel inicial.
+	 * Sets the initial level.
 	 * @param STARTLEVEL
 	 */
 	private static void startMapAndSetLevel(final int STARTLEVEL)
