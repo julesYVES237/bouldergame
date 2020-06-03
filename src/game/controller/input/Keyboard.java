@@ -13,7 +13,6 @@ import game.model.map.MapInstance;
 /**
  * @author mael
  *
- *
  */
 public class Keyboard extends KeyAdapter
 {
