@@ -51,7 +51,7 @@ public class FrameMap extends JFrame
 		GridBagConstraints c = new GridBagConstraints();
 		setTitle("Boulder Dash Groupe 8 ");
 		setResizable(false);
-		setSize(800, 600);
+		setSize(600, 400);
 		getContentPane().setBackground(Color.BLACK);
 		setLayout(new GridBagLayout());
 		panelmap.setLayout(new GridLayout(MapAccess.getHeight(), MapAccess.getWidth()));

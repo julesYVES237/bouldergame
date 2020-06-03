@@ -34,7 +34,7 @@ public class MapElement extends Map
 	}
 
 	/**
-	 * Singleton de MapElement.
+	 * Singleton  MapElement.
 	 * 
 	 * @return MapElement
 	 */

@@ -351,7 +351,7 @@ public class MapInstance
 	
 	
 	/**
-	 * Lee el level reader.
+	 *Read the level reader.
 	 */
 	private void readingLevel()
 	{
@@ -486,7 +486,7 @@ public class MapInstance
 	{
 		if (!ListOfEntities.getList().contains(Rockford.getInstance()))
 		{
-			throw new RockfordNotInLevelException("Rockford no esta en el mapa");
+			throw new RockfordNotInLevelException("Rockford is not on the map");
 		}
 	}
 

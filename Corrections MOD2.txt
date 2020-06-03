@@ -1,0 +1,41 @@
+﻿SWING and Events
+
+
+* Mouse class by extending MouseAdapter, no need to override all methods, just what is needed.
+- fixed up
+
+* The rules window, at least translate into Spanish, put more synthetic things.
+- fixed up
+MVC
+
+*
+the MapIntance class belongs to the model, but in the buildSelectedLevel method it modifies the view (MapVisual.drawMap ();), the MVC pattern is not being respected.
+- fixed up
+
+Exceptions
+
+All right
+
+Threads.
+
+All right
+
+Graphics and operation
+*The jar does not persist level and ranking.
+- the ranking now persists, the ranking is saved in a file in a folder in users.
+- the level, resolution and top also persist is in the config.txt file
+
+* in the configuration window indicate what each selector corresponds to.
+- fixed up
+
+JAVA
+
+*
+The main method of the Game class should be a common static method, and not have the same heading as the entry point of a java program. It is also a controller, since it has the timer.
+- fixed, class is called LaunchGame in packete controller
+
+Additional score
+
+* Add sounds and animation to the character's movements.
+
+* Implement full screen

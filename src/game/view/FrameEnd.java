@@ -109,7 +109,7 @@ public class FrameEnd extends JFrame
 				}
 				else
 				{
-					field.setText("INVALIDO!");
+					field.setText("INVALID!");
 				}
 			}
 		});
@@ -125,7 +125,7 @@ public class FrameEnd extends JFrame
 	 */
 	private boolean nameIsValid(String name)
 	{
-		if (name.length() > 2 && !name.contains(" ") && !name.equals("INVALIDO!"))
+		if (name.length() > 2 && !name.contains(" ") && !name.equals("INVALID!"))
 		{
 			return true;
 		}
@@ -152,7 +152,7 @@ public class FrameEnd extends JFrame
 	{
 		if (MapAccess.getTotalScore() != null && frameend.time != null)
 		{
-			scoreinfo.setText("Puntuacion: " + MapAccess.getTotalScore().toString() + "\n " + "Tiempo: " + frameend.time.toString());
+			scoreinfo.setText("Puntuation: " + MapAccess.getTotalScore().toString() + "\n " + "Weather: " + frameend.time.toString());
 		}
 	}
 

@@ -89,7 +89,7 @@ public class BDLevelReader
 																// method
 																// getElementsByTagName,
 																// we'll get the
-																// root leve of
+																// root level of
 																// the tree
 		Node n = nlist.item(0); // the root element
 		nlist = n.getChildNodes(); // ask for its children, this is the
@@ -167,16 +167,16 @@ public class BDLevelReader
 		BDLevelReader levelReader = new BDLevelReader();
 		try
 		{
-			int nivelElegido = 1;
+			int levelchosen = 1;
 			int levels = levelReader.readLevels("levels.xml");
-			levelReader.setCurrentLevel(nivelElegido);
+			levelReader.setCurrentLevel(levelchosen);
 
 			StringBuilder sb = new StringBuilder();
-			sb.append("NIVELES DISPONIBLES:");
+			sb.append("AVAILABLE LEVELS:");
 			sb.append(levels);
 			sb.append("\n");
-			sb.append("DIAMANTES NECESARIOS DEL NIVEL ");
-			sb.append(nivelElegido);
+			sb.append("DIAMONDS REQUIRED OF THE LEVEL ");
+			sb.append(levelchosen);
 			sb.append(":");
 			sb.append(levelReader.getDiamondsNeeded());
 
@@ -197,7 +197,7 @@ public class BDLevelReader
 	public void imprimirMapa()
 	{
 		System.out.println("..............................................................");
-		System.out.println("...Y así se ve el mapa!");
+		System.out.println("And this is what the map looks like!");
 		for (int y = 0; y < ROW; y++)
 		{
 			for (int x = 0; x < COLUMN; x++)

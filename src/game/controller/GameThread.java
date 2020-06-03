@@ -111,7 +111,7 @@ public class GameThread extends TimerTask
 	}
 	
 	/**
-	 * Hace el ultimo turno.
+	 * Does the last turn.
 	 */
 	private void doLastTurn()
 	{
