@@ -1,7 +1,7 @@
 package game.contract.src.main.java.controller;
 
 /**
- * @author Laurent
+ * @author mael
  * Class for the userOrders
  */
 public class UserOrder implements IUserOrder {

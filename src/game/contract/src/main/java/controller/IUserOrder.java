@@ -1,7 +1,7 @@
 package game.contract.src.main.java.controller;
 
 /**
- * @author Laurent
+ * @author mael
  * Interface for the userorder (keyboard actions)
  */
 public interface IUserOrder {

@@ -5,6 +5,10 @@ package game.model.element;
  * return the surrounding positions and make increments / decrements
  * to simulate movement.
  */
+/**
+ * @author mael
+ *
+ */
 public class Position
 {
 	private Integer X;

@@ -12,6 +12,10 @@ import game.model.map.MapElement;
  *Dynamic elements that can be moved. As Actor and Item. It has a hashmap
  * which contains the elements that the entity can pass.
  */
+/**
+ * @author mael
+ *
+ */
 public abstract class Entity extends Element
 {
 	private HashMap<Integer, ElementTypes> passable = new HashMap<>();

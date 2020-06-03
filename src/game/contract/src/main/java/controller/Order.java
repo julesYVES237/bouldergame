@@ -1,7 +1,7 @@
 package game.contract.src.main.java.controller;
 
 /**
- * @author Laurent
+ * @author mael
  * enum for the different orders we're going to need
  */
 public enum Order {

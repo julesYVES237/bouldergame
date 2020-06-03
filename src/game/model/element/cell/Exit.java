@@ -8,6 +8,10 @@ import game.model.map.MapInstance;
 /**
  * Output cell class
  */
+/**
+ * @author mael
+ *
+ */
 public class Exit extends Cell
 {
 

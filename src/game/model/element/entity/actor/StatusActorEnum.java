@@ -7,6 +7,10 @@ package game.model.element.entity.actor;
  * IDLE: Quiet
 
  */
+/**
+ * @author mael
+ *
+ */
 public enum StatusActorEnum
 {
 	EXPLODING, MOVINGUP, MOVINGDOWN, MOVINGRIGHT, MOVINGLEFT, IDLE, DEAD,

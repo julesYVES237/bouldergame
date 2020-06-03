@@ -16,6 +16,10 @@ import game.model.element.entity.item.Rock;
 /**
  * Element matrix.
  */
+/**
+ * @author mael
+ *
+ */
 public class MapElement extends Map
 {
 	private static MapElement mapelement;

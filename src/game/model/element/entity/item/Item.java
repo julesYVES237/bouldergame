@@ -11,6 +11,10 @@ import game.model.map.MapElement;
  * represents the item, and state booleans.
  *
  */
+/**
+ * @author mael
+ *
+ */
 public abstract class Item extends Entity
 {
 

@@ -10,6 +10,10 @@ import game.model.map.MapElement;
  * booleano para ver si esta siendo empujado o no, junto con otras propiedades
  * de otros items
  */
+/**
+ * @author mael
+ *
+ */
 public class Rock extends Fallable
 {
 

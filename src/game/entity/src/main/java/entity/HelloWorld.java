@@ -2,8 +2,9 @@ package game.entity.src.main.java.entity;
 
 /**
  * The Class HelloWorld.
+/**
+ * @author mael
  *
- * @author Jean-Aymeric Diet
  */
 public class HelloWorld extends Entity {
 

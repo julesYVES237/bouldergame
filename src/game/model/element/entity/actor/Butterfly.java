@@ -6,6 +6,10 @@ import game.model.element.ElementTypes;
 /**
  * Butterfly Enemy. It rotates Hourly.
  */
+/**
+ * @author mael
+ *
+ */
 public class Butterfly extends Enemy
 {
 

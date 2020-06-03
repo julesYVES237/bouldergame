@@ -6,6 +6,10 @@ import game.model.element.ElementTypes;
 /**
  * Cell class ground and empty (if dirty is false).
  */
+/**
+ * @author mael
+ *
+ */
 public class Dirt extends Cell
 {
 	private boolean dirty;

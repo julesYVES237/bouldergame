@@ -6,6 +6,10 @@ import game.model.element.ElementTypes;
 /**
  * Firefly Class. It does an hourly rotation.
  */
+/**
+ * @author mael
+ *
+ */
 public class Firefly extends Enemy
 {
 

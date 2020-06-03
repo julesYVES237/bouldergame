@@ -15,6 +15,10 @@ import game.model.map.MapInstance;
  * score, your diamonds and if you are pushing or not, in addition to
  * actor properties
  */
+/**
+ * @author mael
+ *
+ */
 public class Rockford extends Actor
 {
 	private Integer score;

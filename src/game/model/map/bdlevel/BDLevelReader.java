@@ -8,6 +8,10 @@ import javax.xml.parsers.*;
 import javax.xml.xpath.*;
 import org.w3c.dom.*;
 
+/**
+ * @author mael
+ *
+ */
 public class BDLevelReader
 {
 

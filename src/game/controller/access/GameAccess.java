@@ -6,6 +6,10 @@ import game.controller.LaunchGame;
  * Access the game.
  *
  */
+/**
+ * @author mael
+ *
+ */
 public class GameAccess
 {
 	/**

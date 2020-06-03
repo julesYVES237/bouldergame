@@ -6,6 +6,10 @@ import game.model.element.ElementTypes;
 /**
  * Class that represents the empty item.
  */
+/**
+ * @author mael
+ *
+ */
 public class Empty extends Item
 {
 

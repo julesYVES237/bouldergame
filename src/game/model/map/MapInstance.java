@@ -16,6 +16,10 @@ import game.model.map.bdlevel.BDLevelReader;
  * to a map of cells, items, and actors, along with a list of all the
  * living entities.
  */
+/**
+ * @author mael
+ *
+ */
 public class MapInstance
 {
 	private static MapInstance mapinstance;

@@ -1,7 +1,7 @@
 package game.contract.src.main.java.controller;
 
 /**
- * @author Laurent
+ * @author mael
  * Interface for the controller
  */
 public interface IController {

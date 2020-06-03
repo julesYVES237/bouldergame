@@ -4,6 +4,10 @@ package game.model.element;
  * Game element. Cell, item or actor.
  * It has a position and an identification character.
  */
+/**
+ * @author mael
+ *
+ */
 public class Element
 {
 	private ElementTypes type;

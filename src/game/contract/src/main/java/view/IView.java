@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import game.contract.src.main.java.model.IEntity;
 
 /**
- * @author Thierry
+ * @author mael
  * interface for the view
  */
 public interface IView {

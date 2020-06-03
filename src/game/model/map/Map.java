@@ -6,6 +6,10 @@ import game.model.element.Position;
 /**
  * Map parent class.
  */
+/**
+ * @author mael
+ *
+ */
 public abstract class Map
 {
 

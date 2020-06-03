@@ -2,8 +2,9 @@ package game.contract.src.main.java.contract;
 
 /**
  * The Enum ControllerOrder.
+/**
+ * @author mael
  *
- * @author Jean-Aymeric Diet
  */
 public enum ControllerOrder {
 

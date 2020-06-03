@@ -14,6 +14,10 @@ import game.view.sound.Sound;
 /**
  * Game Thread
  */
+/**
+ * @author mael
+ *
+ */
 public class GameThread extends TimerTask
 {
 	private int turn = 0;

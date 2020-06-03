@@ -2,8 +2,9 @@ package game.contract.src.main.java.contract;
 
 /**
  * The Interface IController.
+/**
+ * @author maele
  *
- * @author Jean-Aymeric Diet
  */
 public interface IController {
 

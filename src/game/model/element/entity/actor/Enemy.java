@@ -9,6 +9,10 @@ import game.model.map.MapInstance;
  * Class that represents the enemies, those that
  * They can kill the player with proximity.
  */
+/**
+ * @author mael
+ *
+ */
 public abstract class Enemy extends Actor
 {
 

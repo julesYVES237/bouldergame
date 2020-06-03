@@ -6,6 +6,10 @@ import game.model.element.ElementTypes;
 /**
  * Class representing titanium.
  */
+/**
+ * @author mael
+ *
+ */
 public class Titanium extends Cell
 {
 

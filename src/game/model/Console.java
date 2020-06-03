@@ -10,6 +10,10 @@ import java.util.Scanner;
  * Launches the game without a graphic interface. Useful for debuting.
  * Works in shifts and with keyboard and console.
  */
+/**
+ * @author mael
+ *
+ */
 public class Console
 {
 	public static void main(String[] args)

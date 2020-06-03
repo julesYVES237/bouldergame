@@ -7,6 +7,10 @@ import game.model.element.ElementTypes;
 /**
  * Diamond Class.
  */
+/**
+ * @author mael
+ *
+ */
 public class Diamond extends Fallable
 {
 

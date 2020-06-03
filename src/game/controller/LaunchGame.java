@@ -9,6 +9,10 @@ import java.util.Timer;
 /**
  * Launch class of the game. Run the GameThread. 
  */
+/**
+ * @author mael
+ *
+ */
 public class LaunchGame
 {
 	private static GameThread task;
