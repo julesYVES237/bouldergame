@@ -1,0 +1,74 @@
+﻿Corrections
+UML
+
+> 
+the uml is more ordered,
+There are parenting methods that we did not put back into child classes.
+
+* It is twice the MapCell class.
+- erased
+
+* It is necessary to put the names of the roles to the relations between class.
+- Relations between classes on the right side of the arrows
+
+* Does not indicate cardinality between relationships
+- Cardinality to the right side of the arrows
+
+* The UML does not match the delivered code. For example, according to the UML the Game class should have 3 instance variables and a collection of levels. In UML StatusItem is subclass of item, but not in code. In UML it says Empty, in code Empty.
+- It coincides with the new version, we did not put the import relations for readability
+
+* Relationships between classes should not be in the variable sections of the class. For example, singleton of the ActiveEntities class, should be an arrow to itself.
+- Singleton with arrows and variable name next to it
+
+
+POO
+
+> 
+We organize the classes in multiple packages
+> game.model has direction and console (execution in console)
+> game.model.element has all the elements.
+> game.model.map contains the maps and mapinstance.
+> We add a moveable interface for elements that have move methods.
+
+* Does not make a correct use of polymorphism. Having three different actor, item and cell maps ask the position in each to determine which element is in the position. You should think of a hierarchy in which you can represent all the elements in a single collection and work the behavior using polymorphism.
+- The game is designed with 3 element maps and 1 character map.
+Now all elements (cells, actors and items) have an element parent
+you could make an array of elements now.
+
+*It does not respect encapsulation, almost all instance variables have package access modifier.
+- model variables are private now, except for: Console (there is main), Actor (protected) and Fallable (protected)
+
+* The use of class variables and methods is not correct. For example, it is possible to call the findRockford class method of AtiveEntities without having instantiated it, which leads to an error, since the entity list is only created when start is called.
+- Rockford, exit are singletons with non-static methods now. There is no more findRockford.
+
+* There should be no code like list.get (i) instanceof Rockford. You should work with the interaction between the objects, for example, asking Rockford for their position.
+- Fixed with methods that are in entity and cell. (isRockford, isExit etc ...).
+- we use more polymorphism to update the movement
+
+* In Rockford's push method, search for the item in the list to update. It should be accessed directly if the position of the element is available.
+- There was an obsolete push method, now it is deleted and the if are more readable. (See Rockford's Push)
+Look no further for the rock on the list.
+
+Documentation
+
+*There are undocumented classes, for example ActiveEntities, Game, Diamond
+- Now everything is documented, some methods do not need a description (singletons, constructors, some overrides have a description in the parent method)
+
+Java
+
+* Use more representative names for the variables. For example list of the ActiveEntities class is not a proper name, it should be entities or listOfEntities.
+- It is more ordered we change ActiveEntities for ListOfEnitites.
+
+* Avoid redundancy: this.state.isAlive () == false is equivalent to this.state.isAlive ().
+- The code is more modularized for better readability and we take out the redundancy.
+
+* Don't use synchronized or Timer without a sense
+- We deleted Timer and syncronized.
+
+Functioning
+
+* There is functionality without programming, for example the explosions of butterflies and fireflies, the growth of amoebas.
+- We programmed the missing functionalities. (Amoeba, enemies, magic walls)
+
+
+* the jar works correctly, and allows you to move the character with the keyboard.

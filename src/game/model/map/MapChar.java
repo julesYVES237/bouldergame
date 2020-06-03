@@ -144,7 +144,7 @@ public class MapChar extends Map
 	 */
 	private static void showEndInfo()
 	{
-		System.out.println("Rockford muerto");
+		System.out.println("Rockford dead");
 	}
 
 	/**

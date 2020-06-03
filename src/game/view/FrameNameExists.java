@@ -63,12 +63,12 @@ public class FrameNameExists extends JFrame
 		panelend.setLayout(new GridBagLayout());
 		Constraint.setup(0, 0, 1, 1, 0, 1, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL);
 
-		scoreinfo = new JLabel("Quiere sobreescribir su resultado, o entrar otro nombre", SwingConstants.CENTER);
+		scoreinfo = new JLabel("You want to overwrite your result, or enter another name", SwingConstants.CENTER);
 		scoreinfo.setSize(100, 50);
 		scoreinfo.setHorizontalAlignment(SwingConstants.CENTER);
 		panelend.add(scoreinfo, Constraint.get());
 
-		button1 = new JButton("Sobreescribir");
+		button1 = new JButton("Overwrite");
 		button1.addActionListener(new ActionListener()
 		{
 
@@ -88,7 +88,7 @@ public class FrameNameExists extends JFrame
 		Constraint.setup(0, 1, 1, 1, 0, 1, GridBagConstraints.CENTER, GridBagConstraints.HORIZONTAL);
 		panelend.add(button1, Constraint.get());
 
-		button2 = new JButton("Cambiar Nombre");
+		button2 = new JButton("Rename");
 		button2.addActionListener(new ActionListener()
 		{
 
