@@ -15,7 +15,7 @@ import game.view.scoreboard.ScoreBoard;
 import game.view.sound.Sound;
 
 /**
- * Frame del menu.
+ * Frame du menu.
  * 
  *
  */
@@ -49,7 +49,7 @@ public class FrameMenu extends JFrame
 	}
 
 	/**
-	 * Initializa el frame.
+	 * Initializa le frame.
 	 */
 	private void start()
 	{
@@ -60,7 +60,7 @@ public class FrameMenu extends JFrame
 	}
 
 	/**
-	 * Saca de la configuracion le tamanio del frame.
+	 * Supprimez la taille du cadre de la configuration.
 	 */
 	private void configFrameSize()
 	{
@@ -76,7 +76,7 @@ public class FrameMenu extends JFrame
 	}
 
 	/**
-	 * Positiona el frame al centro de la pantalla.
+	 * Positionnez le cadre au centre de l'écran.
 	 */
 	public void centerFrame()
 	{
@@ -85,7 +85,7 @@ public class FrameMenu extends JFrame
 	}
 	
 	/**
-	 * Construye el frame.
+	 * Construisez le cadre.
 	 */
 	private void buildFrame()
 	{
@@ -98,7 +98,7 @@ public class FrameMenu extends JFrame
 	}
 	
 	/**
-	 * Setea la configuracion del frame.
+	 * Définissez les paramètres du cadre.
 	 */
 	private void setupFrameMenu()
 	{
@@ -109,7 +109,7 @@ public class FrameMenu extends JFrame
 	}
 
 	/**
-	 * Setea la configuracion del panel.
+	 *Définissez les paramètres du panneau.
 	 */
 	private void setupPanelMenu()
 	{
@@ -121,7 +121,7 @@ public class FrameMenu extends JFrame
 	}
 
 	/**
-	 * Carga el scoreboard y config.
+	 * Chargez le tableau de bord et la configuration.
 	 */
 	private void loadUserFiles()
 	{
@@ -140,7 +140,7 @@ public class FrameMenu extends JFrame
 	}
 
 	/**
-	 * Inicializa los bottones.
+	 *Initialisez les boutons.
 	 */
 	private void putButtons()
 	{
@@ -180,7 +180,7 @@ public class FrameMenu extends JFrame
 	}
 
 	/**
-	 * Remueve todos los listeners para refrescar el panel.
+	 * Supprimez tous les écouteurs pour actualiser le panneau.
 	 * 
 	 * @param jbutton
 	 */
@@ -196,7 +196,7 @@ public class FrameMenu extends JFrame
 	}
 
 	/**
-	 * Refresca el panel.
+	 * Actualisez le panneau.
 	 * 
 	 * @param jpanel
 	 */
@@ -209,7 +209,7 @@ public class FrameMenu extends JFrame
 	}
 
 	/**
-	 * Muestra el menu.
+	 *Affichez le menu.
 	 */
 	public static void showMenu()
 	{
@@ -217,7 +217,7 @@ public class FrameMenu extends JFrame
 	}
 
 	/**
-	 * Devuelve el panel;
+	 * Renvoie le panneau;
 	 * 
 	 * @return el panel
 	 */
@@ -227,7 +227,7 @@ public class FrameMenu extends JFrame
 	}
 
 	/**
-	 * Devuelve los bottones;
+	 * Renvoie les boutons;
 	 * 
 	 * @return los bottones
 	 */
@@ -237,7 +237,7 @@ public class FrameMenu extends JFrame
 	}
 
 	/**
-	 * Devuelve si esta en fullscreen;
+	 * Renvoie s'il est en plein écran;
 	 * 
 	 * @return si esta en fullscreen
 	 */
@@ -256,7 +256,7 @@ public class FrameMenu extends JFrame
 	}
 
 	/**
-	 * Inicializa el menu.
+	 * Initialisez le menu.
 	 */
 	public static void runFrameMenu()
 	{
