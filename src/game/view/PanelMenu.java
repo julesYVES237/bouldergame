@@ -76,24 +76,10 @@ public class PanelMenu extends JPanel
 		Constraint.setup(0, 1, 1, 1, 0.5, SPACEX, GridBagConstraints.CENTER, GridBagConstraints.NONE);
 		panel.add(button[1], Constraint.get());
 
-		button[2].setText("REGLAGE DU JEU");
+		
+
+		button[2].setText("CONFIGURATION");
 		button[2].addActionListener(new ActionListener()
-		{
-
-			@Override
-			public void actionPerformed(ActionEvent e)
-			{
-				Sound.button();
-				PanelRules.getInstance().showRules(FrameMenu.getInstance());
-				;
-			}
-		});
-
-		Constraint.setup(0, 2, 1, 1, 0.5, SPACEX, GridBagConstraints.CENTER, GridBagConstraints.NONE);
-		panel.add(button[2], Constraint.get());
-
-		button[3].setText("CONFIGURATION");
-		button[3].addActionListener(new ActionListener()
 		{
 
 			@Override
@@ -105,10 +91,10 @@ public class PanelMenu extends JPanel
 		});
 
 		Constraint.setup(0, 3, 1, 1, 0.5, SPACEX, GridBagConstraints.CENTER, GridBagConstraints.NONE);
-		panel.add(button[3], Constraint.get());
+		panel.add(button[2], Constraint.get());
 
-		button[4].setText("QUITTER LE JEU");
-		button[4].addActionListener(new ActionListener()
+		button[3].setText("QUITTER LE JEU");
+		button[3].addActionListener(new ActionListener()
 		{
 
 			@Override
@@ -121,7 +107,7 @@ public class PanelMenu extends JPanel
 		});
 
 		Constraint.setup(0, 4, 1, 1, 0.5, SPACEX, GridBagConstraints.CENTER, GridBagConstraints.NONE);
-		panel.add(button[4], Constraint.get());
+		panel.add(button[3], Constraint.get());
 	}
 
 }

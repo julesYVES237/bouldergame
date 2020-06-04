@@ -1,7 +1,7 @@
 package game.view.config;
 
 /**
- * Objeto config para guardar los valores de configuracion.
+ * Config object to save configuration values.
  *
  */
 public class Config
