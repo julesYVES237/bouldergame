@@ -6,4 +6,6 @@ package game.contract.src.main.java.controller;
  */
 public interface IController {
  //test
+	
+	//compile
 }
