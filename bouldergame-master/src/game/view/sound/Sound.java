@@ -13,7 +13,7 @@ import javax.swing.JFrame;
 /**
  * Générateur de sons. Soulever des fichiers wav et contenir des méthodes pour chacun
   * du son.
- */
+ */ Uziel
 public class Sound extends JFrame
 {
 
