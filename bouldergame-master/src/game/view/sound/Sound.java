@@ -106,6 +106,7 @@ public class Sound extends JFrame
 	/**
 	 * Bruit d'un nouveau jeu.
 	 */
+
 	public static void newgame()
 	{
 		Clip clip = null;
