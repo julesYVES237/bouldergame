@@ -1,12 +1,10 @@
 package game.contract.src.main.java.model;
-/**
- * @author Tristan
- * Interface used by the class player but maybe used by the enemy
- * (not the time to figure it out).
- */
-
 import java.awt.image.BufferedImage;
 
+/**
+ * @author mael
+ *
+ */
 public interface IEntity {
 
     /**

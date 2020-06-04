@@ -4,6 +4,10 @@ package game.exception;
  * Roll when Rockford is not on the map.
  *
  */
+/**
+ * @author mael
+ *
+ */
 public class RockfordNotInLevelException extends Exception
 {
 	/**

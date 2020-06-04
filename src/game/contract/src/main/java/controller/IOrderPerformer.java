@@ -1,7 +1,7 @@
 package game.contract.src.main.java.controller;
 
 /**
- * @author Laurent
+ * @author mael
  * interface for the orderperformer which adds the orderperform method
  */
 public interface IOrderPerformer {

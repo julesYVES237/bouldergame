@@ -7,6 +7,10 @@ import game.model.map.MapElement;
 /**
  * This class contains all objects on the map that do not move or fall.
  */
+/**
+ * @author mael
+ *
+ */
 public abstract class Cell extends Element
 {
 

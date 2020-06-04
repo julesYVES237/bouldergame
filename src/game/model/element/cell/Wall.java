@@ -13,6 +13,10 @@ import game.model.map.MapElement;
  * The magic timer is the time of the magic wall before
  * to deactivate.
  */
+/**
+ * @author mael
+ *
+ */
 public class Wall extends Cell
 {
 	private int magicTimer;

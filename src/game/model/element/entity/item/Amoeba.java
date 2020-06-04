@@ -12,6 +12,10 @@ import game.model.map.MapInstance;
 /**
  * Class that represents the Amoeba. It moves and copies itself.
  */
+/**
+ * @author mael
+ *
+ */
 public class Amoeba extends Item implements Moveable
 {
 	private final int MAXAMOEBA = 40;

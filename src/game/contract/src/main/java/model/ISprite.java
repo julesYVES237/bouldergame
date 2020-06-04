@@ -1,7 +1,7 @@
 package game.contract.src.main.java.model;
 
 /**
- * @author Tristan
+ * @author mael
  * Interface used by the different sprites in order to get the parameters when we will
  * load the map
  */

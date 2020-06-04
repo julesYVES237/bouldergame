@@ -13,6 +13,10 @@ package game.model.element;
  * Items (O: rocks, X: diamond, A: amoeba, _: empty) <br>
  * O, X, A, C, <br>
  */
+/**
+ * @author mael
+ *
+ */
 public enum ElementTypes
 {
 	Rockford("Actor",'R'),

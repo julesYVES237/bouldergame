@@ -5,6 +5,10 @@ import game.view.sound.Sound;
 /**
  * Control the sound. Access the view sound.
  */
+/**
+ * @author mael
+ *
+ */
 public class PlaySound
 {
 	//private static Sound sound;

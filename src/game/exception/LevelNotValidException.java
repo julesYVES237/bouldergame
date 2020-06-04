@@ -4,6 +4,10 @@ package game.exception;
  * Throw an exception if the level does not exist.
  *
  */
+/**
+ * @author mael
+ *
+ */
 public class LevelNotValidException extends Exception
 {
 	/**

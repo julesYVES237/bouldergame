@@ -5,6 +5,10 @@ package game.model.element.entity.item;
  * The direction of expansion.
  *
  */
+/**
+ * @author mael
+ *
+ */
 public enum StatusAmoebaEnum
 {
 	EXPANDUP,

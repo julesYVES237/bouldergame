@@ -8,6 +8,10 @@ import game.model.element.entity.ListOfEntities;
  * Access the elements of the model.
  *
  */
+/**
+ * @author mael
+ *
+ */
 public class ElementAccess
 {
 

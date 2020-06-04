@@ -1,4 +1,8 @@
 package game.model.map.bdlevel;
+/**
+ * @author mael
+ *
+ */
 public enum BDTile {
          EMPTY              , 
          DIRT               ,

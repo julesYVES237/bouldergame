@@ -6,8 +6,9 @@ import game.entity.src.main.java.entity.HelloWorld;
 
 /**
  * The Interface IModel.
+/**
+ * @author mael
  *
- * @author Jean-Aymeric Diet
  */
 public interface IModel {
 

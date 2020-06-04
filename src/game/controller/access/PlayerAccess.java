@@ -9,6 +9,10 @@ import game.model.element.entity.actor.Rockford;
  * Model player access.
  *
  */
+/**
+ * @author mael
+ *
+ */
 public class PlayerAccess
 {
 	/**

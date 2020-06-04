@@ -8,6 +8,10 @@ import game.model.map.MapChar;
  * Map access in the model.
  *
  */
+/**
+ * @author mael
+ *
+ */
 public class MapAccess
 {
 	/**

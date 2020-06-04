@@ -10,6 +10,11 @@ import game.model.map.MapInstance;
  * Keyboard actions.
  *
  */
+/**
+ * 
+ * @author mael
+ *
+ */
 public class Keyboard extends KeyAdapter
 {
 	private static boolean up, down, right, left;

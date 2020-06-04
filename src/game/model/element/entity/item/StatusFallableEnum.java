@@ -7,6 +7,10 @@ package game.model.element.entity.item;
  * idle: still.
  *
  */
+/**
+ * @author mael
+ *
+ */
 public enum StatusFallableEnum
 {
 	FALLINGOFF,

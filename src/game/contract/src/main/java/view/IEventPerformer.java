@@ -3,7 +3,7 @@ package game.contract.src.main.java.view;
 import java.awt.event.KeyEvent;
 
 /**
- * @author Thierry
+ * @author mael
  * interface for the eventperformer
  */
 public interface IEventPerformer {

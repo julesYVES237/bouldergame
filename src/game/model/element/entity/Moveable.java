@@ -4,6 +4,10 @@ package game.model.element.entity;
  * Moveable interface for moving elements
  * in all directions.
  */
+/**
+ * @author mael
+ *
+ */
 public interface Moveable
 {
 

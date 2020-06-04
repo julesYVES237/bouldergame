@@ -7,6 +7,10 @@ import game.model.map.MapElement;
 /**
  * Class for falling diamonds and rocks.
  */
+/**
+ * @author mael
+ *
+ */
 public abstract class Fallable extends Item
 {
 	protected StatusFallableEnum state;

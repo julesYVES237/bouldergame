@@ -8,6 +8,10 @@ import game.model.element.entity.actor.Rockford;
  * This class is in charge of grabbing the elements and making a matrix of
  * characters with these.
  */
+/**
+ * @author mael
+ *
+ */
 public class MapChar extends Map
 {
 	private static MapChar mapvisual;

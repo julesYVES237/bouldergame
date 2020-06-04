@@ -14,6 +14,10 @@ import game.view.FrameMap;
  * Mouse actions .
  *
  */
+/**
+ * @author mael
+ *
+ */
 public class Mouse extends MouseAdapter
 {
 	@Override

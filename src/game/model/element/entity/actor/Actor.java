@@ -11,6 +11,10 @@ import game.model.map.MapInstance;
 /**
  * This class represents all the actors.
  */
+/**
+ * @author mael
+ *
+ */
 public abstract class Actor extends Entity implements Moveable
 {
 	protected StatusActorEnum state;

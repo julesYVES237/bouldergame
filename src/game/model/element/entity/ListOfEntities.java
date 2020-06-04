@@ -6,6 +6,10 @@ import java.util.List;
 /**
  * List containing living entities.
  */
+/**
+ * @author mael
+ *
+ */
 public class ListOfEntities
 {
 	private static ListOfEntities singleton;

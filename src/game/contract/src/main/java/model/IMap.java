@@ -1,10 +1,9 @@
 package game.contract.src.main.java.model;
 
 import java.awt.image.BufferedImage;
-
 /**
- * @author Lucien
- * Interface used for the map with all the cjaracteristics it will use
+ * @author mael
+ *
  */
 public interface IMap {
 
