@@ -3,7 +3,7 @@ package game.contract.src.main.java.contract;
 /**
  * The Interface IView.
  *
- * @author Jean-Aymeric Diet
+ * @author mael
  */
 public interface IView {
 
