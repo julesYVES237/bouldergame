@@ -5,5 +5,5 @@ package game.contract.src.main.java.controller;
  * Interface for the controller
  */
 public interface IController {
-
+ //test
 }
