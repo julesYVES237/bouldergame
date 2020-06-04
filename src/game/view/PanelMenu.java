@@ -21,7 +21,8 @@ public class PanelMenu extends JPanel
 {
 
 	/**
-	 * as
+	 * Attributes
+	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
