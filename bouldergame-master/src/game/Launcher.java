@@ -1,5 +1,8 @@
 package game;
 
+/*
+ * launch class
+ */
 import game.view.FrameMenu;
 
 /**
